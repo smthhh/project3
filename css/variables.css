@@ -1,0 +1,17 @@
+:root {
+    --white: #fff;
+    --royal-blue: #2405f2;
+    --dark-blue: #282938;
+    --dark-blue2: #1b1c2b;
+    --grey: #f4f6fc;
+    --yellow: #fcd980;
+    --tint-blue: #1c1e53;
+    --accent: #eef4fa;
+    --grey2: rgb(40, 41, 56, 0.7);
+    --grey-dark: #bbbbcb;
+    --white-opacity: rgba(244, 246, 252, 0.2);
+    --white-opacity2: rgba(255, 255, 255, 0.7);
+    --white-opacity3: rgba(255, 255, 255, 0.8);
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Manrope", sans-serif;
+}
