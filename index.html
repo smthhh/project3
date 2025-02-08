@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project3</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/variables.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Poppins:wght@400;500;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
 </head>
 
 <body>
@@ -55,12 +56,12 @@
 
         <section class="work-about">
             <div class="how-work center">
-                <div class="work-left">
+                <div class="wow work-left animate__animated animate__bounceInLeft animate__repeat-1">
                     <h2>How we work</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     <a href="#">Get in touch with us<span>&#8594;</span></a>
                 </div>
-                <div class="work-right">
+                <div class="wow work-right animate__animated animate__bounceInRight animate__repeat-1">
                     <div class="info">
                         <img src="images/info1.png" alt="info1">
                         <h2>Strategy</h2>
@@ -94,7 +95,7 @@
             <div class="projects">
                 <div class="first-item">
                     <img src="images/project1.png" alt="project1">
-                    <div class="project-info">
+                    <div class="wow project-info animate__animated animate__bounce animate__repeat-3">
                         <h4>Workhub office Webflow Webflow Design</h4>
                         <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam </p>
                         <a href="#">View project<span>&#8594;</span></a>
@@ -128,42 +129,47 @@
                         <img src="images/features1.png" alt="features1">
                         <h5>Uses Client First</h5>
                         <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
-                            gravida mi. Pellentesque et <br> velit  aliquam sed mi. </p>
+                            gravida mi. Pellentesque et <br> velit aliquam sed mi. </p>
                     </div>
                     <div class="feature-info">
                         <img src="images/features2.png" alt="features2">
                         <h5>Two Free Revision Round</h5>
                         <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
-                            gravida mi. Pellentesque et <br> velit  aliquam sed mi. </p>
+                            gravida mi. Pellentesque et <br> velit aliquam sed mi. </p>
                     </div>
                     <div class="feature-info">
                         <img src="images/features3.png" alt="features3">
                         <h5>Template Customization</h5>
                         <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
-                            gravida mi. Pellentesque et <br> velit  aliquam sed mi. </p>
+                            gravida mi. Pellentesque et <br> velit aliquam sed mi. </p>
                     </div>
                     <div class="feature-info">
                         <img src="images/features4.png" alt="features4">
                         <h5>24/7 Support</h5>
                         <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
-                            gravida mi. Pellentesque et <br> velit  aliquam sed mi. </p>
+                            gravida mi. Pellentesque et <br> velit aliquam sed mi. </p>
                     </div>
                     <div class="feature-info">
                         <img src="images/features5.png" alt="features5">
                         <h5>Quick Delivery</h5>
                         <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
-                            gravida mi. Pellentesque et <br> velit  aliquam sed mi. </p>
+                            gravida mi. Pellentesque et <br> velit aliquam sed mi. </p>
                     </div>
                     <div class="feature-info">
                         <img src="images/features6.png" alt="features6">
                         <h5>Hands-on approach</h5>
                         <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
-                            gravida mi. Pellentesque et <br> velit  aliquam sed mi. </p>
+                            gravida mi. Pellentesque et <br> velit aliquam sed mi. </p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 
