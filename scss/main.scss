@@ -1,3 +1,6 @@
+@use 'variables.scss' as variables;
+@use 'mixins.scss' as mixins;
+
 html,
 body,
 div,
@@ -417,7 +420,139 @@ body {
     height: 100%;
 }
 
+.container-comments {
+    background-color: variables.$gray-opacity;
 
+    .box-comments {
+        display: grid;
+        grid-template-columns: 327px 843px;
+        column-gap: 110px;
+        padding: 128px 0;
+
+        @include mixins.adaptive(1300px) {
+            grid-template-columns: 30% 65%;
+            column-gap: 5%;
+        }
+
+        @include mixins.adaptive(768px) {
+            padding: 50px 0;
+        }
+
+        @include mixins.adaptive(600px) {
+            grid-template-columns: 1fr;
+        }
+
+        .about-comments {
+            h3 {
+                font-size: 38px;
+                font-weight: 600;
+                line-height: 147%;
+                color: var(--dark-blue);
+                margin-bottom: 16px;
+
+                @include mixins.adaptive(768px) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 175%;
+                color: variables.$dark-blue-opacity;
+            }
+        }
+
+        .slider {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 48px;
+
+            @include mixins.adaptive(600px) {
+                row-gap: 20px;
+                padding-top: 30px;
+            }
+
+            @include mixins.adaptive(425px) {
+                grid-template-columns: 1fr;
+            }
+
+            .descr {
+                grid-column: 1 / span 2;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 150%;
+                color: var(--dark-blue);
+
+                @include mixins.adaptive(768px) {
+                    font-size: 28px;
+                }
+
+                @include mixins.adaptive(425px) {
+                    font-size: 24px;
+                    grid-column: 1;
+                }
+            }
+
+            .author {
+                display: grid;
+                grid-template-columns: 52px 183px;
+                grid-template-rows: 56px;
+                column-gap: 14px;
+
+                img {
+                    max-width: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    align-self: end;
+                }
+
+                .info {
+                    .name {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 178%;
+                        color: var(--dark-blue);
+                    }
+
+                    .more-info {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 233%;
+                        color: var(--dark-blue);
+                        margin-top: -4px;
+                    }
+                }
+            }
+
+            .buttons {
+                justify-self: end;
+                align-self: end;
+
+                @include mixins.adaptive(425px) {
+                    justify-self: center;
+                }
+
+                .left-btn,
+                .right-btn {
+                    display: inline-grid;
+                    grid-template-columns: 48px;
+                    grid-template-rows: 48px;
+                    justify-items: center;
+                    align-items: center;
+                    background-color: var(--white);
+                    border-radius: 50%;
+                    margin-right: 7px;
+                    cursor: pointer;
+                }
+
+                .right-btn {
+                    background-color: variables.$violete;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 1300px) {
