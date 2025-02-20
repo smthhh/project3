@@ -692,6 +692,12 @@ body {
   line-height: 133%;
   color: var(--dark-blue);
 }
+@media screen and (max-width: 768px) {
+  .our-blog .top-content h3 {
+    text-align: center;
+    margin-top: -65px;
+  }
+}
 .our-blog .bot-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

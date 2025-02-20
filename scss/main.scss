@@ -706,6 +706,11 @@ body {
             font-size: 48px;
             line-height: 133%;
             color: var(--dark-blue);
+
+            @include mixins.adaptive(768px) {
+                text-align: center;
+                margin-top: -65px;
+            }
         }
     }
 
